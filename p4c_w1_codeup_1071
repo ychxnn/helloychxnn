@@ -1,0 +1,16 @@
+#p4c_1#codeup#write-up_#1071
+
+#include <stdio.h>
+ 
+int main()
+{
+	int a;
+	/*while, do, do while 반복문을 사용할 수 없다*/
+	reload:
+		scanf("%d", &a);
+		if(a!=0) {
+			printf("%d\n", a);
+			goto reload;
+		}
+	return 0; 
+}
