@@ -1,0 +1,33 @@
+/*
+#include <stdio.h>
+ 
+int main()
+{
+	int a;
+	while(a!=0)
+	{
+		scanf("%d", &a);
+		printf("%d\n", a);
+	}
+	
+	return 0; 
+}
+
+=> first attempt : struggled for an hour to make the code work
+=> problem
+1. line6 : int a!=0 인 경우에 while 문이 작동해야하므로, 변수 a 선언 당시 변수를 0이 아닌 수로 초기화해야 한다.
+2. line10 : a!=0일때 출력해야한다는 조건을 추가해줘야 한다. 
+						이 조건이 없다면 입력값에 0이 있는 경우, 0도 같이 출력되기 때문에 문제의 요구와 맞지 않는다.
+*/
+
+#include <stdio.h>
+int main(){
+	int a = 1;
+	while(a!=0){
+		scanf("%d", &a);
+		if(a!=0){
+		printf("%d\n", a);}
+	}
+	return 0;
+}
+//#1073의 코드
